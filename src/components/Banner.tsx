@@ -11,7 +11,7 @@ const Banner = () => {
           </video>
           <div className="banner-text">
             <h1>
-              We create <span className="highlight">beautiful</span><br />
+              With <span style={{fontStyle: 'italic', fontWeight: 'bold'}}>Kynix</span>, we create <span className="highlight">beautiful</span><br />
               experiences
             </h1>
             <p>

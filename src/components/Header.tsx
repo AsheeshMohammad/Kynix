@@ -31,7 +31,7 @@ const Header = () => {
             <a href="#home" onClick={(e) => handleSmoothScroll(e, 'home')}>Home</a>
             <a href="#work" onClick={(e) => handleSmoothScroll(e, 'work')}>Work</a>
             <a href="#about" onClick={(e) => handleSmoothScroll(e, 'about')}>About</a>
-            <a href="#contact" onClick={(e) => handleSmoothScroll(e, 'contact')}>Contact</a>
+            <a href="#contact" onClick={(e) => handleSmoothScroll(e, 'contact')}>Let's Connect</a>
           </nav>
 
           <div className="header-actions">
@@ -40,7 +40,7 @@ const Header = () => {
               <a href="#" aria-label="Twitter">TWITTER ↗</a>
               <a href="#" aria-label="Dribbble">DRIBBBLE ↗</a>
             </div>
-            <button className="cta-button">LET'S TALK ↗</button>
+
           </div>
 
           <button 
