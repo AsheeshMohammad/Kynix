@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150" height="40" viewBox="0 0 150 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="foodGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff4757" />
+      <stop offset="50%" stop-color="#ffc107" />
+      <stop offset="100%" stop-color="#4caf50" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Food text -->
+  <text x="0" y="28" font-size="20" font-weight="bold" fill="#ff4757" font-family="Arial, sans-serif">
+    Food
+  </text>
+  
+  <!-- Z with special styling -->
+  <text x="45" y="28" font-size="24" font-weight="bold" fill="#ffc107" font-family="Arial, sans-serif">
+    Z
+  </text>
+  
+  <!-- Corner text -->
+  <text x="65" y="28" font-size="20" font-weight="bold" fill="#4caf50" font-family="Arial, sans-serif">
+    Corner
+  </text>
+  
+  <!-- Decorative elements -->
+  <circle cx="58" cy="8" r="3" fill="#ffc107" opacity="0.7" />
+  <circle cx="65" cy="35" r="2" fill="#ff4757" opacity="0.5" />
+  <circle cx="125" cy="10" r="2.5" fill="#4caf50" opacity="0.6" />
+</svg>

@@ -51,6 +51,15 @@
   font-weight: 500;
 }
 
+.project-logo {
+  margin-bottom: 20px;
+}
+
+.project-title-logo {
+  height: 60px;
+  width: auto;
+}
+
 .project-tags {
   display: flex;
   gap: 10px;
@@ -101,14 +110,15 @@
   transition: transform 0.4s ease;
 }
 
-.project-card:hover .project-image {
-  transform: scale(1.02);
+.project-screenshot {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease;
 }
 
-.image-overlay {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at center, transparent 30%, rgba(0,0,0,0.3) 70%);
+.project-card:hover .project-image {
+  transform: scale(1.02);
 }
 
 @media (max-width: 768px) {
@@ -131,5 +141,11 @@
 
   .project-image {
     height: 200px;
+  }
+  
+  .project-screenshot {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }

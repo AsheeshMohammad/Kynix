@@ -1,0 +1,26 @@
+<svg width="140" height="40" viewBox="0 0 140 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Opening bracket -->
+  <path d="M2 12 L8 20 L2 28" stroke="url(#logoGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Slash -->
+  <path d="M14 12 L20 28" stroke="url(#logoGradient)" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Closing bracket -->
+  <path d="M26 12 L32 20 L26 28" stroke="url(#logoGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Code dots -->
+  <circle cx="38" cy="15" r="2" fill="#7c3aed"/>
+  <circle cx="44" cy="20" r="2" fill="#a855f7"/>
+  <circle cx="50" cy="25" r="2" fill="#ec4899"/>
+  
+  <!-- KYNIX text -->
+  <text x="60" y="26" font-family="monospace" font-size="18" font-weight="bold" fill="url(#logoGradient)">KYNIX</text>
+</svg>

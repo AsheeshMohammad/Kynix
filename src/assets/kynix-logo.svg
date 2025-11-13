@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Simple, lightweight SVG logo for Kynix. Uses white fills so it shows on the site's dark header. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="40" viewBox="0 0 160 40" role="img" aria-labelledby="title">
+  <title id="title">Kynix</title>
+  <!-- emblem: stylized K made from two chevrons -->
+  <g transform="translate(6,6) scale(0.8)" fill="#FFFFFF">
+    <polygon points="0,0 10,0 24,16 10,32 0,32 14,16" fill="#8A5CF6" />
+    <polygon points="28,0 40,0 34,8 46,32 36,32 24,10" fill="#5CE0C6" />
+  </g>
+
+  <!-- wordmark -->
+  <text x="50" y="28" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">Kynix</text>
+</svg>

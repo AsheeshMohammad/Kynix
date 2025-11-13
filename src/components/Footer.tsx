@@ -1,5 +1,5 @@
 import './Footer.css'
-import logo from '../assets/logo2.png'
+import logo from '../assets/kynix-logo.svg'
 
 const Footer = () => {
   const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
@@ -63,7 +63,7 @@ const Footer = () => {
               <div className="footer-section">
                 <h4>Contact</h4>
                 <div className="footer-links">
-                  <a href="mailto:support@kynix.co.in">support@kynix.co.in</a>
+                  <a href="mailto:info@kynix.co.in">info@kynix.co.in</a>
                   <a href="tel:+918904811492">+91 8904811492</a>
                 </div>
               </div>

@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import './Header.css'
-// import logo from '../assets/logo1.png'
-import logo from '../assets/logo2.png'
-// import logo from '../assets/logo3.png'
+import logo from '../assets/kynix-logo.svg'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

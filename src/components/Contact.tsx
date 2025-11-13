@@ -101,8 +101,8 @@ const Contact = () => {
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
-            <a href="mailto:support@kynix.co.in">
-              support@kynix.co.in
+            <a href="mailto:info@kynix.co.in">
+              info@kynix.co.in
             </a>
           </div>
         </div>
