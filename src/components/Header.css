@@ -106,14 +106,16 @@
 @media (max-width: 768px) {
   .nav {
     display: none;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 66px;
     left: 0;
     right: 0;
-    background: rgba(26, 11, 46, 0.95);
+    bottom: 0;
+    background: #1a0b2e;
     flex-direction: column;
     padding: 20px;
     gap: 20px;
+    height: 25vh;
   }
 
   .nav-open {
