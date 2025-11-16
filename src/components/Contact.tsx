@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { toast } from 'react-toastify'
 import './Contact.css'
 
 const Contact = () => {
@@ -32,7 +33,7 @@ const Contact = () => {
     }, 100)
   }
 
-  const handleConnect = () => {
+  const handleConnect = async () => {
     const validationError = validateInput(contact)
     
     if (validationError) {
@@ -41,9 +42,36 @@ const Contact = () => {
     }
     
     setError('')
-    alert('Thank you! We will connect with you soon.')
-    setContact('')
-    setShowForm(false)
+    
+    try {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+      const isEmail = emailRegex.test(contact)
+      
+      const emailData = {
+        name: 'Contact Request',
+        email: isEmail ? contact : 'info@kynix.co.in',
+        subject: 'New Contact Request - Kynix',
+        message: isEmail ? `New contact request from: ${contact}` : `New contact request from phone: ${contact}`
+      }
+      
+      const response = await fetch('http://localhost:3001/api/mail/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(emailData)
+      })
+      
+      const result = await response.json()
+      
+      if (result.success) {
+        toast.success('Thank you! We will connect with you soon.')
+        setContact('')
+        setShowForm(false)
+      } else {
+        toast.error('Failed to send message. Please try again.')
+      }
+    } catch (error) {
+      toast.error('Failed to send message. Please try again.')
+    }
   }
 
   return (
