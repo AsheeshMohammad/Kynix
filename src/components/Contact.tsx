@@ -54,7 +54,7 @@ const Contact = () => {
         message: isEmail ? `New contact request from: ${contact}` : `New contact request from phone: ${contact}`
       }
       
-      const response = await fetch('http://localhost:3001/api/mail/contact', {
+      const response = await fetch('https://kynix-api.onrender.com/api/mail/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(emailData)
